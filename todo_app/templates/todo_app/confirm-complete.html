@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <form id="confirm-form" method="POST" action="">
+        {% csrf_token %}
+        <input type="hidden" name="Submit"/>
+    </form>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById("confirm-form").submit();
+    };
+    </script>
+    
+</body>
+</html>
